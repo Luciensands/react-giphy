@@ -1,34 +1,12 @@
 import '../assets/stylesheets/application.scss';
 import ReactDOM from 'react-dom';
-import React, { Component } from 'react';
+import React from 'react';
+import App from './components/app';
 
-class Hello extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      clicked: false
-    };
-  }
-
-  handleClick = () => {
-    this.setState({
-      clicked: !this.state.clicked
-    });
-  }
-
-  render () {
-    return (
-      <div className={this.state.clicked ? 'clicked' : null}
-      onClick={this.handleClick}>
-       Hello, {this.props.name}!
-       </div>
-    )
-  }
-}
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 if (root) {
   ReactDOM.render(
-    <Hello name="Joe" />,
+    <App />,
     root
   );
 }
