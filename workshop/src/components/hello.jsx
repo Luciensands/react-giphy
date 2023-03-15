@@ -1,4 +1,4 @@
-class Hello extends Component {
+class Hello extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -23,3 +23,9 @@ class Hello extends Component {
     )
   }
 }
+// class Hello extends React.Component {
+//   render () {
+//     const { name, age} = props;
+//     return <h1>Hi {name}, your age is {age}</h1>;
+//     }
+// }
